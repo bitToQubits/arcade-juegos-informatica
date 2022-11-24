@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+	<title>blob success neon-svg</title>
+	<defs>
+		<linearGradient id="g1" x1="44" y1="34.6" x2="170.3" y2="166.4" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#74ec9b" stop-opacity="0"/>
+			<stop offset="1" stop-color="#74ec9b"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="Layer" class="s0" d="m121.5 24c23.1 4.3 40.9 21.6 54 40.5 13.1 18.7 21.5 38.8 18.5 58-3.1 19.3-17.6 37.6-37.9 49.3-20.1 11.8-46.1 17.1-76.6 10.6-30.6-6.4-65.9-24.7-72.8-50.7-7-26.1 14.2-59.8 38.9-81.2 24.7-21.5 52.9-30.5 75.9-26.5z"/>
+</svg>
