@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
     <link rel="stylesheet" href="assets/css/Features-Image-images.css">
 </head>
@@ -97,12 +97,19 @@
     opacity: 0;
   }
 }
-.header {
-    background: url('assets/img/brands/blob\ success\ neon.svg'), url('assets/img/brands/blob\ success\ neon-svg.svg'); 
-    background-repeat: no-repeat; 
-    background-size: 300px; 
-    background-position: left top, right top;
+@media screen and (min-width: 800px) {
+    .header {
+        background: url('assets/img/brands/blob\ success\ neon.svg'), url('assets/img/brands/blob\ success\ neon-svg.svg'); 
+        background-repeat: no-repeat; 
+        background-size: 300px; 
+        background-position: left top, right top;
+    }
+    .pyl-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
 }
+
 </style>
 <body>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
@@ -141,7 +148,7 @@
                         <div class="col-md-12 text-center pb-5" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">
                             <h2 class="fw-bold" style="color: #7bfc60;">Valores de nuestra empresa</h2>
                         </div>
-                        <div class="col-md-4" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
+                        <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
                             <div class="card border">
                             <div class="card-body">
                                 <h5 class="card-title">Misión</h5>
@@ -152,7 +159,7 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-md-4" data-aos="fade-down" data-aos-delay="600" data-aos-once="true">
+                        <div class="col-md-4 mb-3" data-aos="fade-down" data-aos-delay="600" data-aos-once="true">
                             <div class="card border">
                                 <div class="card-body">
                                 <h5 class="card-title">Visión</h5>
@@ -164,7 +171,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4" data-aos="fade-left" data-aos-delay="900" data-aos-once="true">
+                        <div class="col-md-4 mb-3" data-aos="fade-left" data-aos-delay="900" data-aos-once="true">
                             <div class="card border">
                                 <div class="card-body">
                                 <h5 class="card-title">Valores</h5>
@@ -175,7 +182,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 py-5">
+                        <div class="col-md-6 pyl-5">
                             <h2 class="fw-bold" style="text-shadow: 0px 0px 5px #e63232;color: #e63232;font-weight: bold;font-family: Poppins, sans-serif;" data-aos-delay="300" data-aos="fade-right" data-aos-once="true">
                                 Equipo 
                                 <span>y estrategia de contratación.</span>
@@ -197,7 +204,7 @@
                                 <li>Markeing managers</li>
                             </ul>
                         </div>
-                            <div class="col-md-3 py-5" data-aos-delay="600" data-aos="fade-right" data-aos-once="true">
+                            <div class="col-md-3 pyl-5 mb-3" data-aos-delay="600" data-aos="fade-right" data-aos-once="true">
                                 <div class="card text-white bg-dark">
                                     <img src="assets/img/team/Manuel Armando.jpeg" class="card-img-top cropped-245" alt="...">
                                         <div class="card-body">
@@ -206,7 +213,7 @@
                                         </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 py-5" data-aos-delay="900" data-aos="fade-left" data-aos-once="true">
+                            <div class="col-md-3 pyl-5 mb-3" data-aos-delay="900" data-aos="fade-left" data-aos-once="true">
                                 <div class="card text-white bg-dark">
                                     <img src="assets/img/team/Joel Ureña.jpeg" class="card-img-top cropped-245" alt="...">
                                         <div class="card-body">
@@ -269,7 +276,7 @@
                                 </div>
                         </div>
                     </div>
-                     <div class="col-md-3 mb-4"  data-aos="fade-up" data-aos-once="true">
+                     <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-once="true">
                         <div class="card text-white bg-dark" style="min-height: 25rem;">
                             <img src="assets/img/team/Isabella Monique.jpeg" class="card-img-top cropped-245" alt="...">
                                 <div class="card-body">
@@ -350,6 +357,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({disable: 'mobile'});
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>

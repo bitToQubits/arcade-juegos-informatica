@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Productos - 8 Bits Interactive</title>
-    <meta name="description" content="8 Bits Interactive es un local único de juegos retro, dedicado a recuperar los buenos tiempos de los videojuegos y la cultura de los juegos retro. Desde PacMan hasta el simulador del juego clásico Snake y una pantalla de 120 pulgadas con Mando y Consola – lo tenemos todo.">
+    <meta name="description" content="8 Bits Interactive es un local único de juegos retro, dedicado a recuperar los buenos tiempos de los videojuegos y la cultura de los juegos retro.">
     <link rel="icon" type="image/png" sizes="500x500" href="assets/img/products/logo%20png.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -14,14 +14,13 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
     <link rel="stylesheet" href="assets/css/Features-Image-images.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <style>
 .cropped-245{
     height: 200px; 
     object-fit: cover;
-    
 }
 hr.neon-hr {
   border: 5px solid #ff0000;
@@ -86,24 +85,35 @@ hr.neon-hr {
   100%{transform:translateY(0px) skey(0deg);}
 }
 
-.verticalmente-centrado {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.blob-section{
-    background-image: url('assets/img/products/blob\ cyan.svg'), url('assets/img/products/blob\ anaranjada.svg');
-    transition: background-image 3s;
-    background-position: left top,right top;
-    background-size: 400px, 400px 600px;
-    background-repeat: no-repeat;
-}
-
 @media screen and (min-width: 800px) {
+    .blob-section{
+        background-image: url('assets/img/products/blob\ cyan.svg'), url('assets/img/products/blob\ anaranjada.svg');
+        transition: background-image 3s;
+        background-position: left top,right top;
+        background-size: 400px, 400px 600px;
+        background-repeat: no-repeat;
+    }
 
+    .verticalmente-centrado {
+        margin: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      .space-7{
+        padding-top: 7rem;
+      }
+}
+
+@media screen and (max-width: 800px) {
+    .verticalmente-centrado {
+        margin-top: 3rem;
+    }
+    .space-7{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 </style>
@@ -132,7 +142,7 @@ hr.neon-hr {
                             <img src="assets/img/products/logo png.png" height="100" alt="">
                             8 Bits Interactive presenta ...
                         </h2>-->
-                        <div style="padding-top: 7rem;"><!--style="padding-left: 2rem; padding-right: 2rem;"-->
+                        <div class="space-7"><!--style="padding-left: 2rem; padding-right: 2rem;"-->
                             <h1 data-aos="fade-down" data-aos-delay="1200" data-aos-once="true">
                                 <span style="text-shadow: 0px 0px 5px #d62a7d;color: #d62a7d;font-weight: bold;font-family: Poppins, sans-serif;">Space</span> 
                                 <span style="text-shadow: 0px 0px 5px #7d95ed;color: #7d95ed;font-weight: bold;font-family: Poppins, sans-serif;">Arcade</span>
@@ -312,9 +322,12 @@ hr.neon-hr {
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({disable: 'mobile'});
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
 </body>
