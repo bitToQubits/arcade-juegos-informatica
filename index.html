@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row" style="padding-top: 20px;">
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
-                    <div class="text-center"><img data-aos="fade-down" src="assets/img/products/logo%20png.png" width="400"></div>
+                    <div class="text-center"><img class="img-fluid" data-aos="fade-down" src="assets/img/products/logo%20png.png" width="400"></div>
                 </div>
             </div>
             <div class="row" style="padding-top: 20px;padding-bottom: 45px;">
@@ -58,8 +58,8 @@
     </header>
     <section class="py-5">
         <div class="container">
-            <div class="row" style="margin-right: -60px;margin-left: -60px;">
-                <div class="col-md-6"><img class="img-fluid" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" src="assets/img/products/80s-experience.jpg" height="400" style="border: 1px solid #3763f4;width: 600px;"></div>
+            <div class="row thelocal" style="margin-right: -60px;margin-left: -60px;">
+                <div class="col-md-6"><img class="img-fluid" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" src="assets/img/products/80s-experience.jpg" height="400" style="border: 1px solid #3763f4;"></div>
                 <div class="col-md-6" style="background: url(&quot;assets/img/products/background-img-2%20(1).png&quot;) right no-repeat;padding: 60px;"><small class="text-uppercase" data-aos="fade-down" data-aos-delay="500" data-aos-once="true" style="color: #c92764;letter-spacing: 1px;text-shadow: 5px 5px 15px;padding-bottom: 20px;font-family: Poppins, sans-serif;">Ofrecemos</small>
                     <h3 class="fw-bold" data-aos="fade-left" data-aos-delay="800" data-aos-once="true" style="text-shadow: 0px 0px 5px #0dff5d;color: #0dff5d;font-weight: bold;font-family: Poppins, sans-serif;">Una EXPERIENCIA de los 80s<br>para TODAS las EDADES</h3>
                     <p data-aos="fade-left" data-aos-delay="1150" data-aos-once="true" style="margin-top: 20px;"><strong>8 Bits Interactive</strong> es un local único de juegos retro, dedicado a recuperar los buenos tiempos de los videojuegos y la cultura de los juegos retro. Desde <em>PacMan </em>hasta el simulador del juego clásico <em>Snake </em>y una pantalla de 120 pulgadas con Mando y Consola&nbsp;– lo tenemos todo.</p><a class="btn btn-outline-primary" role="button" style="border-radius: 0px;margin-top: 10px;" href="services.html">Aprende más sobre nuestro Cátalogo</a>
@@ -284,8 +284,11 @@
 
         const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         if( width <=768){
-            foto_grupal = document.querySelector(".theteam");
+
+            foto_grupal = document.querySelector(".theteam"); thelocal = document.querySelector(".thelocal");
             foto_grupal.classList.add("img-fluid");
+            thelocal.setAttribute("style", "max-width: 1300px");
+
         }
     </script>
     <script src="assets/js/jquery.min.js"></script>
